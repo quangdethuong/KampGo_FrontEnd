@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+}
+
+*{
+    font-family: var(--sm-font);
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* navbar */
+.navbar-brand span{
+    letter-spacing: 2px;
+}
+
+.active:not(header .active){
+    color: aqua !important;
+    pointer-events: none !important;
+}
+
+/* Login */
+.gradient-custom .col-12 .card:hover{
+    box-shadow: 0px 1px 6px black;
+}
+
+/* header */
+header{
+    background: url(../images/shoe-background.jpg) top/cover no-repeat;
+}
+
+header .btn{
+    background-color: #fff;
+    color: gray;
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+header .btn:hover{
+    box-shadow: 0px 2px 6px white;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    z-index: 0;
+    background: none;
+    border: none;
+}
+
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+/* page content */
+.disabled-link{
+    pointer-events: none;
+}
+
+.main-category__fpanel-active{
+    color: red;
+}
+
+.header-section__header__title{
+    font-size: 30px;
+    color: gray;
+    font-family: var(--lg-font);
+}
+
+/* item-list*/
+.item-list{
+    list-style-type: none;
+    font-family: var(--sm-font);
+    font-size: 15px;
+}
+
+.item-list li:nth-child(6) img
+{
+        width: 38%;
+        margin-right: 4px;
+}
+
+.item img{
+    width: 50%;
+    margin-right: 4px;
+}
+
+/* collection */
+.collection img{
+    width: 20rem;
+    height: 17rem;
+}
+
+.collection-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collection-item-detail{
+    font-size: 16px;
+    bottom: -8rem;
+    left: 2rem;
+}
+
+.collection{
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+
+.loadMore{
+    display: flex;
+    justify-content: left;
+    margin-left: 3rem;
+}
+
+.loadMore button{
+    border: 0;
+    margin: 0;
+    padding: 8px 12px;
+    color: #fff;
+    /* background: #0187ca; */
+    background: rgb(167, 162, 162);
+    font: inherit;
+    cursor: pointer;
+    /* box-shadow: 0px 5px 0px rgba(1, 76, 173, 0.849); */
+    box-shadow: 0px 5px 0px rgb(78, 74, 74);
+    outline: 0;
+    border-radius: 4px;
+    transition: all 0.1s linear;
+}
+
+.loadMore button:active{
+    transform: translateY(3px);
+    box-shadow: 0px 3px 0px rgba(1, 76, 173, 0.849);
+}
+
+.loadMore button:hover{
+    box-shadow: 0 1px 6px gray;
+}
+
+/* carousel icon */
+.carousel-control-next-icon:not(header .carousel-control-next-icon):after
+{
+  content: '>';
+  font-size: 2rem;
+  color: rgb(196, 192, 192);
+  font-weight: bold;
+}
+
+.carousel-control-prev-icon:not(header .carousel-control-prev-icon):after {
+  content: '<';
+  font-size: 2rem;
+  color: rgb(196, 192, 192);
+  font-weight: bold;
+}
+
+/* sort-bar */
+.sort-bar-option a:hover{
+    box-shadow: none;
+}
+
+.sort-bar-option-active{
+    pointer-events: none;
+}
+
+/* footer */
+footer .brand, .navbar-brand span{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+/* nav-link */
+.nav-link:hover, a:hover{
+    color: gray !important;
+}
+
+/* shopping-cart */
+.btn-minus,
+.btn-plus{
+    background: none;
+    box-shadow: none !important;
+}
+
+/* order-form */
+.order-form{
+    height: 70vh;
+    width: 50vw;
+    border-radius: 2rem;
+    border: 1px solid gray;
+}
+
+.order-form:hover{
+    box-shadow: 0 1px 6px black;
+}
+
+.order-form-body{
+    background: url(../images/air-jordan-11-cool-grey.webp) top/cover no-repeat;
+}
+
+/* product-detail */
+.product img{
+    transition: transform .2s;
+}
+
+.product img:hover{
+    transform: scale(1.1);
+}
+
+.product-add input, .product-add select{
+    width: 70%;
+}
+
+.related-item img{
+    width: 100%;
+    height: 20rem;
+}
+
+/* rating color */
+.rating-color{
+    color:#fbc634 !important;
+}
+
+/* purchase order */
+.active-link{
+    color: rgb(255, 136, 0);
+}
+
+/* profile */
+.profile-form{
+    border: 1px solid gray;
+    border-radius: 2rem;
+}
+.profile-form:hover{
+    box-shadow: 0px 1px 6px black;
+}
+/* btn file */
+.btn-file {
+    background-color: white;
+    color: black;
+    border-color: black;
+    position: relative;
+    overflow: hidden;
+}
+.btn-file:hover{
+    color: black;
+    background-color: white;
+    border-color: gray !important;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;   
+    cursor: inherit;
+    display: block;
+}
+
+/* table */
+td, th{
+    padding: 0.5rem;
+}
+
+/* dashboard */
+.dashboard:hover{
+    box-shadow: 0 1px 6px black;
+}
+
+
+
+@media(max-width:500px){
+    .item-list li:nth-child(6) img{
+        margin-top: 2.5rem;
+    }
+
+    .collection-item:not(.collection-item:first-child){
+        margin-top: 8rem;
+    }
+    .collection img:hover{
+        transform: scale(1);
+    }
+    /* about us */
+    .about-info div:nth-child(2){
+        margin-top: 2rem;
+    }
+    .shopping-cart-btn .submit-btn{
+        margin-left: 1rem;
+    }
+
+    .shopping-cart-btn .continue-btn{
+        margin-left: 1rem;
+    }
+}
+
+@media(min-width:501px) and (max-width:900px){
+    .collection-item{
+        margin-top: 7rem;
+    }
+
+    .collection img:hover{
+        transform: scale(1);
+    }
+
+    .header-section__header__title{
+        margin-top: 5rem;
+    }
+}
+
+@media(min-width:901px){
+    .item-list li:nth-child(3) img,
+    .item-list li:nth-child(1) img,
+    .item-list li:nth-child(2) img
+    {
+        width: 40%;
+    }
+
+
+    .item-list li:nth-child(6) img{
+        margin-top: 1rem;
+    }
+    .shopping-cart-payment{
+        margin-left: 10rem;
+    }
+
+    .shopping-cart-btn{
+        margin-left: 14rem;
+    }
+
+    .shopping-cart-btn .submit-btn{
+        margin-left: 1rem;
+    }
+}
